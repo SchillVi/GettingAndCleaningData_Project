@@ -49,7 +49,8 @@ The dataset includes the following files:
 
 Notes: 
 ======
-- Features are normalized and bounded within [-1,1].
+- Features are normalized and bounded within [-1,1]. "subjectID" contains integers 1-30. 
+  "activity" has six levels representing the six activities described above.
 - Each feature vector is a row on the text file.
 
 
