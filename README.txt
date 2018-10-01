@@ -4,7 +4,7 @@ Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
+DITEN - Universit√† degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
@@ -44,11 +44,24 @@ The dataset includes the following files:
 
 - 'Tidy_data.txt': Tidy data set containing the features' means and standard deviations averaged for each subject and each activity.
 
+- 'run_analysis.R': Performs the steps to achieve a tidy data set.
+
 
 Notes: 
 ======
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
+
+
+Steps of analysis: 
+==================
+- Combine test and train data as well as subject IDs, activities and features to one data set.
+- Extract only features which contain either a mean or a standard deviation. 
+- Create descriptive variable names. 
+- Replace activity numbers with names. 
+- Create the average for each feature by subject and activity. 
+- Save the new data set.
+
 
 For more information about this dataset contact: activityrecognition@smartlab.ws
 
